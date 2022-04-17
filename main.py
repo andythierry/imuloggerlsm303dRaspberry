@@ -15,7 +15,7 @@ file=repertoire+'/'+datetime.now().strftime("%d_%m_%Y-%H:%M:%S"+".csv")
 
 
 fl=open(file, mode='x', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
-fl.write("accelerometre X,accelerometre Y,accelerometre Z \n")
+fl.write("accelerometre X,accelerometre Y,accelerometre Z,")
 fl.write("magnetometre X,magnetometre Y,magnetometre Z \n")
 while True:
     xyz = lsm.accelerometer()
@@ -26,7 +26,7 @@ while True:
 
 
     fl.write(("{:+06.2f}g , {:+06.2f}g , {:+06.2f}g").format(*xyz))
-    fl.write("\n")
+    # fl.write("\n")
 
     fl.write(("{:+06.2f}g , {:+06.2f}g , {:+06.2f}g").format(*mgxyz))
     fl.write('\n')
