@@ -25,10 +25,10 @@ while True:
     #print(("{:+06.2f}g : {:+06.2f}g : {:+06.2f}g").format(*xyz))
 
 
-    fl.write(("{:+06.2f}g , {:+06.2f}g , {:+06.2f}g").format(*xyz))
+    fl.write(xyz[0]+','+xyz[1]+','+','+xyz[2])
     fl.write(",")
 
-    fl.write(("{:+06.2f}g , {:+06.2f}g , {:+06.2f}g").format(*mgxyz))
+    fl.write(mgxyz[0]+','+mgxyz[1]+','++mgxyz[2])
     fl.write('\n')
 
 
