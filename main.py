@@ -26,7 +26,7 @@ while True:
 
 
     fl.write(("{:f},{:f},{:f}").format(*xyz))
-    # fl.write(" , ")
+     fl.write(" , ")
 
     fl.write(("{:f},{:f},{:f}").format(*mgxyz))
     fl.write('\n')
