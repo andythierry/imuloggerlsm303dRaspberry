@@ -25,7 +25,7 @@ while True:
     #print(("{:+06.2f}g : {:+06.2f}g : {:+06.2f}g").format(*xyz))
 
 
-    fl.write(("{:+06.2f} , {:+06.2f} , {:+06.2f}").format(*xyz))
+    fl.write(("{:f},{:f},{:f}").format(*xyz))
     fl.write(" , ")
 
     fl.write(("{:+06.2f} , {:+06.2f} , {:+06.2f}").format(*mgxyz))
