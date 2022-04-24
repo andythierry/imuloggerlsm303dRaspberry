@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from datetime import datetime
 import time
 from lsm303d import LSM303D
