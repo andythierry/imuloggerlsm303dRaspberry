@@ -21,13 +21,15 @@ fl.write("magnetometre X,magnetometre Y,magnetometre Z \n")
 while True:
     xyz = lsm.accelerometer()
     mgxyz = lsm.magnetometer()
-    print('TimeStamp', datetime.now().time().__str__(),",")
+    print('TimeStamp', datetime.now().time().__str__())
+    print(",")
 
     print('accelerometre :', xyz)
     print('magnetometre: ', mgxyz)
     #print(("{:+06.2f}g : {:+06.2f}g : {:+06.2f}g").format(*xyz))
 
-    fl.write(datetime.now().time().__str__(),",")
+    fl.write(datetime.now().time().__str__())
+    fl.write(",")
     fl.write(("{:f},{:f},{:f}").format(*xyz))
     fl.write(",")
 
