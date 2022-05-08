@@ -5,7 +5,7 @@ from lsm303d import LSM303D
 import os
 lsm = LSM303D(0x1d)  # Change to 0x1e if you have soldered the address jumper
 
-repertoire="~/imuloggerlsm303dRaspberry/LOGS/"+datetime.now().strftime("%d_%m_%Y")
+repertoire="./home/pi/imuloggerlsm303dRaspberry/LOGS/"+datetime.now().strftime("%d_%m_%Y")
 try:
  os.makedirs(repertoire)
 except OSError:
